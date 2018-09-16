@@ -1,6 +1,6 @@
 package week1;
 
-public class StudentManagement<i> {
+public class StudentManagement{
 
     // TODO: khai báo thuộc tính students là array chứa các đối tượng thuộc lớp Student (max. 100)
     public  Student Student1[] = new Student[100];
@@ -65,7 +65,7 @@ public class StudentManagement<i> {
 
         }
         SN.studentsByGroup();
-        
+
         SN.removeStudent("17020676");
     }
 }
