@@ -44,6 +44,7 @@ public class Student {
         this.name = s.name;
         this.id = s.id;
         this.email = s.email;
+        this.group = s.group;
         // TODO:
     }
 
