@@ -18,14 +18,27 @@ public class StudentManagement {
         {
             if(this.student[i].getGroup().equals("INT 22041"))
             {
-                System.out.println
+                System.out.println(this.student[i].getInfo());
+            }
+            else if(this.student[i].getGroup().equals("INT 22042"))
+            {
+                System.out.println(this.student[i].getInfo());
+            }
     }
 
     void removeStudent(String id) {
         // TODO:
+        
     }
 
     public static void main(String[] args) {
         // TODO:
+        Student hocSinh1 = new Student();
+        hocSinh1.setGroup("INT 22041");
+        Student hocSinh2 = new Student();
+        hocSinh2.setGroup("INT 22041");
+        Student hocSinh3= new Student();
+        hocSinh2.setGroup("INT 22042);
+        
     }
 }
