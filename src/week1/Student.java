@@ -6,8 +6,8 @@ public class Student {
     // TODO: khai báo các thuộc tính cho Student
     public String getName(){return name;}   public void setName(String name){this.name=name;}
     public String getId(){return id;}       public void setId(String id){this.id=id;}
-    public String getGroup(){return group;}   public void setName(String group){this.group=group;}
-    public String getEmail(){return email;}   public void setName(String email){this.email=email;}
+    public String getGroup(){return group;}   public void setGroup(String group){this.group=group;}
+    public String getEmail(){return email;}   public void setEmail(String email){this.email=email;}
     // TODO: khai báo các phương thức getter, setter cho Student
 
     /**
