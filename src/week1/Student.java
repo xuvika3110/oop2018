@@ -51,6 +51,5 @@ public class Student {
     String getInfo() {
          return this.getName() + "\n" + this.getId() + "\n" + this.getGroup() + "\n" + this.getEmail();
         // TODO:
-        return null; // xóa dòng này sau khi cài đặt
     }
 }
