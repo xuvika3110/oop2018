@@ -7,7 +7,7 @@ public class StudentManagement {
 
     public boolean sameGroup(Student s1, Student s2) {
         // TODO:
-        return s1.getGroup()==s2.getGroup();
+        return s1.getGroup().equals(s2.getGroup());
     }
 
     void studentsByGroup() {
@@ -22,14 +22,14 @@ public class StudentManagement {
             }
         }
     }
+
     void removeStudent(String id) {
         // TODO:
-        for(int i=0;i<students.length;i++){
-            if(students[i].getId().equals(id))
-            {
-                for ( int b = i; b < students.length-1;b++)
-                    students[b] = students[b+1];
-                students[students.length-1] = new Student();
+        for (int i = 0; i < students.length; i++) {
+            if (students[i].getId().equals(id)) {
+                for (int b = i; b < students.length - 1; b++)
+                    students[b] = students[b + 1];
+                    students[students.length - 1] = new Student();
             }
         }
 
@@ -57,12 +57,21 @@ public class StudentManagement {
         System.out.println(sv2.getInfo());
         System.out.println(sv3.getInfo());
         StudentManagement xuvi = new StudentManagement();
+        
+        Student[] xuvika = new Student[100];
+
+        xuvika = xuvi.students;
+        for (int i= 0; i <100; i ++)
+        {
+            xuvika[i] = new Student();
+        }
         System.out.println("Danh sach sinh vien sau khi xoa la :");
         xuvi.removeStudent("17020694");
         for (int i = 0; i < xuvi.students.length; i++) {
-            if (xuvi.students[i].getName() != "Student") {
+            if (xuvi.students[i].getName() != ("Student")) {
                 System.out.println(xuvi.students[i].getInfo());
 
             }
         }
     }
+}
