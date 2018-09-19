@@ -12,6 +12,13 @@ public class StudentManagement {
 
     void studentsByGroup() {
         // TODO:
+        int i=0;
+        int n = student.length;
+        for(i=0;i<n;i++)
+        {
+            if(this.student[i].getGroup().equals("INT 22041"))
+            {
+                System.out.println
     }
 
     void removeStudent(String id) {
@@ -20,6 +27,5 @@ public class StudentManagement {
 
     public static void main(String[] args) {
         // TODO:
-        System.out.println("assdfsdf");
     }
 }
