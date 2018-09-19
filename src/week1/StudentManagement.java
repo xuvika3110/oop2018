@@ -1,5 +1,7 @@
 package week1;
 
+import java.rmi.StubNotFoundException;
+
 public class StudentManagement{
 
     // TODO: khai báo thuộc tính students là array chứa các đối tượng thuộc lớp Student (max. 100)
@@ -10,12 +12,25 @@ public class StudentManagement{
     }
 
     void studentsByGroup() {
-        for(int j = 0; Student1[j] != null; j++)
-            if(Student1[j].getGroup().equals("INT22041"))
-                System.out.println(Student1[j].getInfo());
-        for(int j = 0; Student1[j] != null ; j++)
-            if(Student1[j].getGroup().equals("INT22042"))
-                System.out.println(Student1[j].getInfo());
+        int soLop = 1;
+        String[] tenLop = new String[100];
+        tenLop[0] = Student1[0].getGroup();
+        for(int j = 1; Student1[j] != null; j++) {
+            int dem = 0;
+            for (int i = 0; i < soLop; i++) {
+                if (!tenLop[i].equals(Student1[j].getGroup())) dem++;
+                else break;
+            }
+            if( dem == soLop){
+                dem = 0;
+                soLop++;
+                tenLop[soLop-1] = Student1[j].getGroup();
+            }
+        }
+        for(int i = 0; i < soLop; i++)
+            for(int j = 0; Student1[j] != null ; j++)
+                if(Student1[j].getGroup().equals(tenLop[i]))
+                    System.out.println(Student1[j].getInfo());
     }
 
     void removeStudent(String id) {
@@ -27,7 +42,7 @@ public class StudentManagement{
           Student1[j] =  new Student(Student1[j+1]);
             vitri = j;
         }
-        Student1[vitri] = null;
+        Student1[vitri+1] = null;
 
     }
 
@@ -64,8 +79,20 @@ public class StudentManagement{
             }
 
         }
+        SN.Student1[10] = new Student();
+        SN.Student1[10].setName("nguyen van a" + 10);
+        SN.Student1[10].setGroup("INT22045");
+        SN.Student1[10].setId("1702067" + 10);
+        SN.Student1[11] = new Student();
+        SN.Student1[11].setName("nguyen van a" + 10);
+        SN.Student1[11].setGroup("INT220459");
+        SN.Student1[11].setId("1702067" + 10);
         SN.studentsByGroup();
 
         SN.removeStudent("17020676");
+
+        System.out.println("");
+
+        SN.studentsByGroup();
     }
 }
