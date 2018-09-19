@@ -64,8 +64,8 @@ public class StudentManagement {
 	System.out.println("Danh sach sinh vien sau khi xoa la :");
 	xuvi.removeStudent("17020694");
 	for (int i=0;i<xuvi.students.length;i++){
-            if (sm.students[i].getName()!="Student"){
-                System.out.println(sm.students[i].getInfo());
+            if (xuvi.students[i].getName()!="Student"){
+                System.out.println(xuvi.students[i].getInfo());
         
     }
 }
