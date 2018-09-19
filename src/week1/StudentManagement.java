@@ -14,7 +14,7 @@ public class StudentManagement {
         // TODO:
         int i=0;
         int n = student.length;
-        for(i=0;i<n;i++)
+        for(i=0;student[i] != null;i++)
         {
             if(this.student[i].getGroup().equals("INT 22041"))
             {
@@ -28,6 +28,14 @@ public class StudentManagement {
 
     void removeStudent(String id) {
         // TODO:
+        for(int i=0;i<students.length;i++){
+            if(students[i].getId().equals(id))
+            {
+                for ( int b = i; b < students.length-1;b++)
+				students[b] = students[b+1];
+				students[students.length-1] = new Student();
+			}
+		}
         
     }
 
