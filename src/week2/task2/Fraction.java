@@ -14,7 +14,10 @@ public class Fraction {
 
     public Fraction add(Fraction other) {
         // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
-        return null;
+        int ts = this.tu * other.mau + other.tu * this.mau;
+        int ms = this.mau * other.mau;
+        Fraction phanSoTong = new Fraction(ts, ms);
+        return Fraction(ts, ms);
     }
 
     public Fraction subtract(Fraction other) {
