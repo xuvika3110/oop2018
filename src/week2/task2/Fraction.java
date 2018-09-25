@@ -8,7 +8,7 @@ public class Fraction {
     public int mauSo;
 
     public Fraction(int numerator, int denominator) {
-        // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số)
+        // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số).
         tuSo = numerator;
         mauSo = denominator;
     }
