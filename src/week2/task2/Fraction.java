@@ -8,7 +8,7 @@ public class Fraction {
     public static int gcd(int a, int b) {
         // TODO: Tính ước chung lớn nhất của 2 số a, b
         if(b==0) return a;
-        return gcd(b;a%b);
+        return gcd(b,a%b);
         
     }
 
