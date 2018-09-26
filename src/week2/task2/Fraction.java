@@ -64,4 +64,13 @@ public class Fraction {
         return Fraction();
         
     }
+    public boolean equals(Object object){
+        if (object instanceof Fraction){
+            Fraction other = (Fraction) object;
+            if (other.mau*this.tu == other.tu*this.mau)
+                return true;
+            else return false;
+        }
+        return false;
+    }
 }
