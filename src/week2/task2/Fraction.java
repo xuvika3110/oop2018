@@ -24,7 +24,7 @@ public class Fraction {
         int ms = this.mau * other.mau;
         int u = gcd(ts, ms);
         ts = ts/u;
-        ms = mau/u;
+        ms = ms/u;
         Fraction phanSoTong = new Fraction(ts, ms);
         return phanSoTong;
     }
@@ -35,7 +35,7 @@ public class Fraction {
         int ms = this.mau * other.mau;
         int u = gcd(ts, ms);
         ts = ts/u;
-        ms = mau/u;
+        ms = ms/u;
         Fraction phanSoHieu = new Fraction(ts, ms);
         return phanSoHieu;
         
@@ -47,7 +47,7 @@ public class Fraction {
         int ms = this.mau * other.mau;
         int u = gcd(ts, ms);
         ts = ts/u;
-        ms = mau/u;
+        ms = ms/u;
         Fraction phanSoTich = new Fraction(ts, ms);
         return phanSoTich;
         
@@ -59,7 +59,7 @@ public class Fraction {
         int ms = this.mau * other.tu;
         int u = gcd(ts, ms);
         ts = ts/u;
-        ms = mau/u;
+        ms = ms/u;
         Fraction phanSoThuong = new Fraction(ts, ms);
         return phanSoThuong;
         
