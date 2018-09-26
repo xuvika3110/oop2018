@@ -28,11 +28,4 @@ public class Task1 {
         }
         return fn;
     }
-    public static void main(String[] args){
-        
-        int st = new gcd(5,3);
-        System.out.println(st);
-       int std = new fibonacci(5);
-        System.out.println(std);
-    }
 }
