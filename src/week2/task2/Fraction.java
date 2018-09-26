@@ -26,7 +26,7 @@ public class Fraction {
         ts = ts/u;
         ms = mau/u;
         Fraction phanSoTong = new Fraction(ts, ms);
-        return Fraction();
+        return phanSoTong;
     }
 
     public Fraction subtract(Fraction other) {
@@ -37,7 +37,7 @@ public class Fraction {
         ts = ts/u;
         ms = mau/u;
         Fraction phanSoHieu = new Fraction(ts, ms);
-        return Fraction();
+        return phanSoHieu;
         
     }
 
@@ -49,7 +49,7 @@ public class Fraction {
         ts = ts/u;
         ms = mau/u;
         Fraction phanSoTich = new Fraction(ts, ms);
-        return Fraction();
+        return phanSoTich;
         
     }
 
@@ -61,7 +61,7 @@ public class Fraction {
         ts = ts/u;
         ms = mau/u;
         Fraction phanSoThuong = new Fraction(ts, ms);
-        return Fraction();
+        return phanSoThuong;
         
     }
     public boolean equals(Object object){
