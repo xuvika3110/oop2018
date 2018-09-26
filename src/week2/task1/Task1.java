@@ -34,4 +34,5 @@ public class Task1 {
         System.out.println(st.gcd(a,b));
         fibonacci std = new fibonacci(5);
         System.out.println(std.fibonacci(n));
+    }
 }
