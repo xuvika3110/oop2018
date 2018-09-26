@@ -22,16 +22,28 @@ public class Fraction {
 
     public Fraction subtract(Fraction other) {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
-        return null;
+        int ts = this.tu * other.mau - other.tu * this.mau;
+        int ms = this.mau * other.mau;
+        Fraction phanSoHieu = new Fraction(ts, ms);
+        return Fraction(ts, ms);
+        
     }
 
     public Fraction multiply(Fraction other) {
         // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
-        return null;
+        int ts = this.tu * other.tu;
+        int ms = this.mau * other.mau;
+        Fraction phanSoTich = new Fraction(ts, ms);
+        return Fraction(ts, ms);
+        
     }
 
     public Fraction divide(Fraction other) {
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
-        return null;
+        int ts = this.tu * other.mau;
+        int ms = this.mau * other.tu;
+        Fraction phanSoThuong = new Fraction(ts, ms);
+        return Fraction(ts, ms);
+        
     }
 }
