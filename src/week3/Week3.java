@@ -4,12 +4,19 @@ public class Week3 {
 
     public static int max(int m, int n) {
         // TODO: Tìm giá trị lớn nhất của hai số nguyên, giá trị trả về của hàm là số lớn nhất
-        return -1;
+        if (a>b) return a;
+        return b;
+      
     }
 
     public static int minOfArray(int[] array) {
         // TODO: Tìm giá trị nhỏ nhất của của một mảng số nguyên (kích thước mảng <= 100 phần tử)
-        return -1;
+        int min = array[0];
+        for(int i=1;i<array.length;i++)
+        {
+            if(array[i]<min) min=array[i];
+        }        
+        return min;
     }
 
     /**
